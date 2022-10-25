@@ -6,9 +6,5 @@ var articleSchema = new Schema({
   Pages: { type: Number, min: 1, max: 5 },
 });
 
-.0.0
-0
-0.
-
 var Article = mongoose.model('Article', articleSchema);
 module.exports = Article;
