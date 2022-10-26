@@ -20,7 +20,8 @@ Each comment can have fields:-
 
 - content
 - author -> ID of user
-- article ->
+- article ->  
+  // why article in comment???
 - timestamps()
 
 Each user can have fields:-
