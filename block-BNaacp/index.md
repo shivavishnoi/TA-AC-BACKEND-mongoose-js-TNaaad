@@ -30,6 +30,7 @@ Q. query a single document(user) using mongoose
 - use Model.findById(id)
 
 Mention the difference between them in comments, if any ?
+find return array, findOne returns single object, find byid accepts id itself as argument
 
 Q. Update a user
 
@@ -46,14 +47,14 @@ For example:-
 
 ```js
 // import User model at top
-const User = require("./models/user");
+const User = require('./models/user');
 
 // delete route for deleting a user using id
-app.delete("/users", (req, res) => {
-  var userId = "some id from database";
+app.delete('/users', (req, res) => {
+  var userId = 'some id from database';
   User.findByIdAndDelete(id, (err, user) => {
     if (err) return next(err);
-    res.send("user deleted");
+    res.send('user deleted');
   });
 });
 ```
